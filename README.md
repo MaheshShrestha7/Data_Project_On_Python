@@ -78,3 +78,75 @@ plt.show()
 - Airflow remains the most in-demand skills throughout the year.
 - alteryx is the second most in-demand skills and seem to have dipped down to its lowest (of around 1%) in the month of May and August.
 -Angular is always the lowest throughout the year.
+
+
+
+
+## 4_Salary_analysis.ipynb
+ # The Analysis
+ ## How well do jobs pay?
+
+ ### Visualise Data
+ ```python
+sns.boxplot(data=df_AUS_top6, x='salary_year_avg', y='job_title_short',order=job_order)
+sns.set_theme(style='ticks')
+
+# this is all the same
+plt.title('Salary Distributions in Australia')
+plt.xlabel('Yearly Salary (USD)')
+plt.ylabel('')
+plt.xlim(0, 600000) 
+ticks_x = plt.FuncFormatter(lambda y, pos: f'${int(y/1000)}K')
+plt.gca().xaxis.set_major_formatter(ticks_x)
+plt.show()
+ ```
+ ![Salary Distributions of Data Jobs in Australia](3_Project/images/salary_analysis_plot.png)
+ *Box plot visualising the salary distributions for the TOP 6 data job titles.*
+
+ ### Insights :
+ - Software engineer has the most consistent salary ranging from ~100K to ~220K
+ - Senior Data Engineer has boxed salary between ~100K to ~150K
+
+
+# The Analysis
+ ### What are the in-demand and highest paying skills for data engineers in Australia ?
+
+### Visualise Data 
+```python
+fig, ax = plt.subplots(2, 1)  
+
+sns.set_theme(style='ticks')
+
+# Top 10 Highest Paid Skills for Data Engineers
+sns.barplot(data=df_DE_top_pay, x='median', y=df_DE_top_pay.index, hue='median', ax=ax[0], palette='dark:b_r')
+ax[0].legend().remove()
+# original code:
+# df_DE_top_pay[::-1].plot(kind='barh', y='median', ax=ax[0], legend=False) 
+ax[0].set_title('Top 10 Highest Paid Skills for Data Engineers')
+ax[0].set_ylabel('')
+ax[0].set_xlabel('')
+ax[0].xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K'))
+
+
+# Top 10 Most In-Demand Skills for Data Engineers
+sns.barplot(data=df_DE_skills, x='median', y=df_DE_skills.index, hue='median', ax=ax[1], palette='light:b')
+ax[1].legend().remove()
+# original code:
+# df_DE_skills[::-1].plot(kind='barh', y='median', ax=ax[1], legend=False)
+ax[1].set_title('Top 10 Most In-Demand Skills for Data Engineers')
+ax[1].set_ylabel('')
+ax[1].set_xlabel('Median Salary (USD)')
+ax[1].set_xlim(ax[0].get_xlim())  # Set the same x-axis limits as the first plot
+ax[1].xaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'${int(x/1000)}K'))
+
+plt.tight_layout()
+plt.show()
+```
+ ![The highest Paid and most in-demand skills for Data engineers in Australia](3_Project/images/salary_analysis_2_plot.png)
+ *Two seperate bar graphs visualising the highest paid skills and most in-demand skills for data engineers in Australia*
+
+ ### Insights :
+ - SSIS is the highest paid skill for data engineers in Australia with salary hitting ~160K
+ - go is the most in-demand skills
+ - bitbucket, c, git, atlassian and node.js are on the same category relating to highest paying skills for data engineers of around ~150K
+
