@@ -50,3 +50,31 @@ plt.show()
 - SQL is the most versatile skill, highly demanded across all 5 top roles , most prominently for Data engineer (62.5%)
 - Also, SQL is most requested skill for Senior data enginner
 - Data engineer requires more specialised technical skills (AWS,azure,Spark) compared to data analyst.
+
+
+
+
+## 3_Skill_Trend.ipynb
+ # The Analysis
+ ## How are in-demand skills trending for Data engineers?
+
+ ### Visualise Data
+ ```python
+from matplotlib.ticker import PercentFormatter
+ax = plt.gca()  # Getting current axis
+ax.yaxis.set_major_formatter(PercentFormatter(decimals=0))  # Formatting y-axis to percentage
+
+# Adding skill names at the end of each line for clarity
+for i in range(3):
+    plt.text(11,df_plot.iloc[-1,i],df_plot.columns[i]) #11 is the index for December, df_plot.iloc[-1,i] gets the last row value for each skill ,df_plot.columns[i] gets the skill name
+plt.show()
+ ```
+
+![Trending Top Skills for Data Engineers in Australia](3_Project/images/skill_trend_plot.png)
+*Bar graph visualising the trending top skills for data engineers in Australia in 2023*
+
+
+### Insights : 
+- Airflow remains the most in-demand skills throughout the year.
+- alteryx is the second most in-demand skills and seem to have dipped down to its lowest (of around 1%) in the month of May and August.
+-Angular is always the lowest throughout the year.
