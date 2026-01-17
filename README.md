@@ -150,3 +150,35 @@ plt.show()
  - go is the most in-demand skills
  - bitbucket, c, git, atlassian and node.js are on the same category relating to highest paying skills for data engineers of around ~150K
 
+
+
+## 5_Optimal_Skills.ipynb
+ # The Analysis
+ ## What are the most optimal skill to learn for Data Engineers?
+
+ #### Visualise Data
+ ```python
+from adjustText import adjust_text
+from matplotlib.pyplot as plt
+sns.scatterplot(
+    data=df_plot,
+    x='skill_percent',
+    y='median_salary',
+    hue='technology'
+)
+
+plt.show()
+ ```
+
+ #### Results : 
+ ![Most Optimal Skills for Data Engineers in Australia](3_Project/images/optimal_skills_plot.png)
+*A scatter plot visualising the most optimal skills (high paying and high demand) for data engineers in Australia.*
+
+#### Insights : 
+- The scatter plot show `go` is highly paid skill under programming technology however has less percentage of data engineer jobs openings.
+
+- `python` and `sql` skills are high demanded skills for data engineer but are on the lower side of median salary.
+
+- Under `cloud` technology , `aws` is highly regarded.
+- `sql server` from `database` technology is on the lower side of job openings.
+
