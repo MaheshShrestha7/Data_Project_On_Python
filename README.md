@@ -1,10 +1,44 @@
-# Data_Project_On_Python
-## 1_EDA_Intro.ipynb
+# Data Engineer Australian Market Analysis - Project On Python
+# Overview 
+his project provides a comprehensive analysis of the data engineering job market in Australia. Driven by a need to navigate the evolving tech landscape, this study identifies high-demand skills and maps them against salary trends to uncover optimal career opportunities.
+
+Leveraging data from [Luke Barousse’s Python Course](https://www.youtube.com/watch?v=wUSDVGivd-8), this repository contains Python-based explorations into job titles, compensation, and geographic trends. By analyzing the intersection of technical requirements and economic returns, this project serves as a strategic guide for data professionals aiming to maximize their market value.
+
+# The Questions 
+Below are the questions I wanted to answer in my project : 
+1. What are the skills most in-demand for the TOP 3 popular data roles?
+2. How are in-demand skills trending for Data engineers?
+3. How well do jobs and skills pay for Data engineers?
+4. What are the optimal skills for data engineers to learn? (High demand and High paying)
+
+# Tools used 
+ For my deep dive into the data engineers job market, I harnessed the power of several key tools : 
+  - Python
+    - Pandas Library : Used for analysing the data.
+    - Matplotlib Library : used for visualing data.
+    - Seaborn Library : used for creating more advanced visuals.
+  - Jupyter Notebooks : used for running python scripts , which allows to include notes/analysis.
+  - Visual Studio Code : go-to IDE for executing python script.
+  - Git & GitHub : Used for version control and sharing of python code/analysis. 
+
+
+# Data Preparation and Cleanup 
+This section outlines the steps taken to prepare the data for analysis, ensuring accuracy and usability.
+
+## Import & Cleanup data
+I start by importing the required Python libraries and loading the dataset, followed by the initial data cleaning to ensure data is clean and ready for analysis. 
+
+
+
+
+# The Analysis
+
+ ## 1_EDA_Intro.ipynb
 Contains Explainatory Data Analysis intro.
 
-## 2_Skill_Demand.ipynb
- # The Analysis
- ## What are the most demanded skills for the TOP 5 most popular data roles?
+# 2_Skill_Demand.ipynb   
+
+# What are the most demanded skills for the TOP 5 most popular data roles?
 
  To find the most demanded skills for top 5 most popular data roles. I filtered out these postitions by which ones were the most popular, and then got the top 5 skills for these top 5 roles. This query highlights the most popular job titles and their top skills , showing which skills I should pay attention to depending on the role I'm targeting.
 
@@ -54,9 +88,8 @@ plt.show()
 
 
 
-## 3_Skill_Trend.ipynb
- # The Analysis
- ## How are in-demand skills trending for Data engineers?
+# 3_Skill_Trend.ipynb
+# How are in-demand skills trending for Data engineers?
 
  ### Visualise Data
  ```python
@@ -82,9 +115,8 @@ plt.show()
 
 
 
-## 4_Salary_analysis.ipynb
- # The Analysis
- ## How well do jobs pay?
+# 4_Salary_analysis.ipynb
+# How well do jobs pay?
 
  ### Visualise Data
  ```python
@@ -108,8 +140,8 @@ plt.show()
  - Senior Data Engineer has boxed salary between ~100K to ~150K
 
 
-# The Analysis
- ### What are the in-demand and highest paying skills for data engineers in Australia ?
+
+# What are the in-demand and highest paying skills for data engineers in Australia ?
 
 ### Visualise Data 
 ```python
@@ -152,9 +184,8 @@ plt.show()
 
 
 
-## 5_Optimal_Skills.ipynb
- # The Analysis
- ## What are the most optimal skill to learn for Data Engineers?
+# 5_Optimal_Skills.ipynb
+# What are the most optimal skill to learn for Data Engineers?
 
  #### Visualise Data
  ```python
@@ -181,4 +212,35 @@ plt.show()
 
 - Under `cloud` technology , `aws` is highly regarded.
 - `sql server` from `database` technology is on the lower side of job openings.
+
+
+# What I Learned 
+Throughtout this project, I deepned my understanding of the data engineers job market and enhanced my technical skills in Python, especially in data manipulation and visualisation. Here are the few specific things to mention : 
+- Advanced Python Proficiency: Leveraged the Pandas ecosystem for complex data manipulation and used Matplotlib and Seaborn to create sophisticated, data-driven visualizations.
+
+- Data Integrity & Preprocessing: Gained hands-on experience in rigorous data cleaning, reinforcing the principle that the quality of analytical insights is directly tied to the integrity of the underlying data.
+
+- Strategic Market Analysis: Developed a framework for aligning technical skill sets with market realities. By analyzing the intersection of demand, compensation, and availability, I’ve refined my approach to strategic career development in the tech sector.
+
+
+# Insights 
+This project provided several general insights into the job market for data engineers : 
+- Compensation Mapping: Identified a direct correlation between specialized technical competencies and premium salary brackets.
+
+- Market Dynamics: Observed a high rate of volatility in tool-specific demand, emphasizing the need for an adaptable skill set in a shifting landscape.
+
+- Strategic Career Pathing: Pinpointed "high-value" skill clusters—those that are both high-demand and high-compensation—to provide a data-backed roadmap for maximizing professional ROI.
+
+# Challanges 
+This project was not without its challanges, but it provided good learning opportunities : 
+- Data Integrity: Addressing missing and inconsistent entries required a robust cleaning pipeline to ensure the accuracy and reliability of the final analysis.
+
+- Data Visualization: Translating complex datasets into intuitive visual representations was a significant challenge, requiring iterative design to balance detail with clarity.
+
+- Scope Management: Maintaining a balance between deep-dive technical analysis and a high-level overview was critical to ensuring the project remained accessible without losing depth.
+
+# Conclusion
+This project offers a comprehensive look into the data engineering job market, identifying the core skills and emerging trends shaping the industry. The insights gathered provide a strategic roadmap for professionals looking to pivot into or advance within data engineering roles. As the landscape evolves, this analysis underscores the necessity of continuous learning and proactive adaptation. This repository serves as a foundation for future market research and data-driven career planning.
+
+
 
