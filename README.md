@@ -1,6 +1,6 @@
 # Data Engineer Australian Market Analysis - Project On Python
 # Overview 
-his project provides a comprehensive analysis of the data engineering job market in Australia. Driven by a need to navigate the evolving tech landscape, this study identifies high-demand skills and maps them against salary trends to uncover optimal career opportunities.
+This project provides a comprehensive analysis of the data engineering job market in Australia. Driven by a need to navigate the evolving tech landscape, this study identifies high-demand skills and maps them against salary trends to uncover optimal career opportunities.
 
 Leveraging data from [Luke Barousse’s Python Course](https://www.youtube.com/watch?v=wUSDVGivd-8), this repository contains Python-based explorations into job titles, compensation, and geographic trends. By analyzing the intersection of technical requirements and economic returns, this project serves as a strategic guide for data professionals aiming to maximize their market value.
 
